@@ -1,14 +1,9 @@
-This file contains instructions to run the artifact associated with the paper "Automated Parametrized Verification of CRDTs". The entire artifact can be found in the folder 'Submission-143'.
 
-The artifact consists of First-order logic encodings of the Verification Conditions generated using Def. 7 (Non-interference to Commutativity, Page-11) in the paper, written in Z3's input format. These encodings can be found in the folder 'z3-scripts'.
+The artifact consists of First-order logic encodings of the Verification Conditions generated using Def. 7 (Non-interference to Commutativity, Page-11) in the paper, written in Z3's input format.
 
-A script which automatically runs Z3 on all the encodings is also included and can be directly executed as follows (after navigating to the folder Submission-143):
+To run the individual encodings, simply execute z3 using the -smt2 option. For example, to run the encoding 'Set_EC_base.smt' use the following command:
 
-./run-all.sh
-
-To run the individual encodings, simply execute z3 (installed in /home/cav/Z3) using the -smt2 option. For example, to run the encoding 'simpleset_EC_base.smt' use the following command:
-
-z3 -smt2 z3-scripts/simpleset/simpleset_EC_base.smt 
+z3 -smt2 Set/Set_EC_base.smt 
 
 --------------
 Output
